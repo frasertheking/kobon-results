@@ -12,6 +12,7 @@ The best public collection of arrangements is the gallery by Parpalak and Utkin
 | n  | triangles | upper bound | file |
 |----|-----------|-------------|------|
 | 74 | 1763      | 1767        | [certificates/n74_1763.json](certificates/n74_1763.json) |
+| 98 | 3119      | 3125        | [certificates/n98_3119.json](certificates/n98_3119.json) |
 
 **74 lines, 1763 triangles.** We start from a perfect 73-line arrangement (1727
 triangles) and add one line far out, beyond every crossing point, at an angle where it
@@ -23,6 +24,11 @@ proves that it always gains m triangles for 2m+1 lines in this situation. What's
 here is the explicit 74-line file. The classical construction gives 1752 for n = 74.
 The 73-line base is a cleaned-up version of a perfect arrangement from the
 [rsi-kobon-triangles](https://github.com/Rohith18p/rsi-kobon-triangles) repo.
+
+**98 lines, 3119 triangles.** Same construction: a perfect 97-line arrangement (3071
+triangles, a doubling from the rsi-kobon-triangles repo) plus a far line that adds 48.
+The classical construction gives 3104 for n = 98, and we don't know of an explicit
+98-line arrangement with more.
 
 There's an interactive picture in [viewer/n74_1763.html](viewer/n74_1763.html).
 Download it and open it in a browser. Most of the triangles are tiny, so zoom in.
