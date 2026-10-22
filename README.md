@@ -11,8 +11,21 @@ The best public collection of arrangements is the gallery by Parpalak and Utkin
 
 | n  | triangles | upper bound | file |
 |----|-----------|-------------|------|
+| 40 | 495       | 502         | [certificates/n40_495.json](certificates/n40_495.json) |
 | 74 | 1763      | 1767        | [certificates/n74_1763.json](certificates/n74_1763.json) |
 | 98 | 3119      | 3125        | [certificates/n98_3119.json](certificates/n98_3119.json) |
+
+**40 lines, 495 triangles.** The previous best we know of is 494, and OEIS has no
+value for n = 40 yet. The arrangement has two triple points, both on the same line,
+and no parallel lines.
+
+How it was found: take a 494-triangle arrangement from our search, delete one line,
+and work out exactly which way of putting a line back (as a pseudoline, allowed to
+pass through existing crossing points) gives the most triangles. For this base the
+answer is 495, using a line through two crossing points. The rest of the
+arrangement was then nudged slightly until the straight line through those two
+points crosses everything in the same order. This is the same kind of move as in
+Parpalak and Utkin's 50-line arrangement with 792 triangles.
 
 **74 lines, 1763 triangles.** We start from a perfect 73-line arrangement (1727
 triangles) and add one line far out, beyond every crossing point, at an angle where it
@@ -50,8 +63,10 @@ add. Using this as a search constraint, we checked:
   n = 44.
 * No line in general position added to our perfect 73-line base reaches 1764.
 
-Lines through existing crossing points aren't covered by the proof. We're still
-checking those by computer.
+Lines through existing crossing points aren't covered by the proof, but they are now
+checked by computer: for each of the 88 bases we compute the best possible added
+line exactly, including pseudolines and lines through crossing points. None of them
+gets past 608.
 
 ## Checking a file
 
