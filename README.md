@@ -43,7 +43,8 @@ triangles, a doubling from the rsi-kobon-triangles repo) plus a far line that ad
 The classical construction gives 3104 for n = 98, and we don't know of an explicit
 98-line arrangement with more.
 
-There's an interactive picture in [viewer/n74_1763.html](viewer/n74_1763.html).
+There are interactive pictures in [viewer/n40_495.html](viewer/n40_495.html) and
+[viewer/n74_1763.html](viewer/n74_1763.html).
 Download it and open it in a browser. Most of the triangles are tiny, so zoom in.
 
 ## Adding one line to a perfect arrangement
