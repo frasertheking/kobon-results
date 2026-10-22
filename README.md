@@ -27,6 +27,8 @@ arrangement was then nudged slightly until the straight line through those two
 points crosses everything in the same order. This is the same kind of move as in
 Parpalak and Utkin's 50-line arrangement with 792 triangles.
 
+![40 lines, 495 triangles](images/n40_495.png)
+
 **74 lines, 1763 triangles.** We start from a perfect 73-line arrangement (1727
 triangles) and add one line far out, beyond every crossing point, at an angle where it
 closes off 36 of the outer wedges into new triangles. None of the original triangles
