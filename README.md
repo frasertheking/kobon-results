@@ -13,7 +13,7 @@ The best public collection of arrangements is the gallery by Parpalak and Utkin
 |----|-----------|-------------|------|
 | 39 | 471       | 481         | [certificates/n39_471.json](certificates/n39_471.json) |
 | 40 | 495       | 502         | [certificates/n40_495.json](certificates/n40_495.json) |
-| 74 | 1763      | 1767        | [certificates/n74_1763.json](certificates/n74_1763.json) |
+| 74 | 1763 (now beaten: 1764 by Parpalak–Utkin) | 1767 | [certificates/n74_1763.json](certificates/n74_1763.json) |
 | 98 | 3119      | 3125        | [certificates/n98_3119.json](certificates/n98_3119.json) |
 
 **39 lines, 471 triangles.** The previous best we know of is 470, and OEIS has no value for
@@ -49,6 +49,11 @@ proves that it always gains m triangles for 2m+1 lines in this situation. What's
 here is the explicit 74-line file. The classical construction gives 1752 for n = 74.
 The 73-line base is a cleaned-up version of a perfect arrangement from the
 [rsi-kobon-triangles](https://github.com/Rohith18p/rsi-kobon-triangles) repo.
+
+*Update, 23 October 2026:* Parpalak and Utkin have since added a 74-line arrangement
+with 1764 triangles to their gallery
+([ud1/kobon-solutions](https://github.com/ud1/kobon-solutions)), so 1763 is no longer
+the best known for n = 74.
 
 **98 lines, 3119 triangles.** Same construction: a perfect 97-line arrangement (3071
 triangles, a doubling from the rsi-kobon-triangles repo) plus a far line that adds 48.
