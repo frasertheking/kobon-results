@@ -11,9 +11,19 @@ The best public collection of arrangements is the gallery by Parpalak and Utkin
 
 | n  | triangles | upper bound | file |
 |----|-----------|-------------|------|
+| 39 | 471       | 481         | [certificates/n39_471.json](certificates/n39_471.json) |
 | 40 | 495       | 502         | [certificates/n40_495.json](certificates/n40_495.json) |
 | 74 | 1763      | 1767        | [certificates/n74_1763.json](certificates/n74_1763.json) |
 | 98 | 3119      | 3125        | [certificates/n98_3119.json](certificates/n98_3119.json) |
+
+**39 lines, 471 triangles.** The previous best we know of is 470, and OEIS has no value for
+n = 39 yet. We started from the 470-triangle arrangement, deleted one line, and computed
+exactly which way of putting one line back gives the most triangles. For this one the best
+re-inserted line passes through no crossing points and gives 471. To draw it straight, the
+other lines had to move slightly, while keeping the existing four triple points exact and
+keeping the new line's direction in the right range.
+
+![39 lines, 471 triangles](images/n39_471.png)
 
 **40 lines, 495 triangles.** The previous best we know of is 494, and OEIS has no
 value for n = 40 yet. The arrangement has two triple points, both on the same line,
