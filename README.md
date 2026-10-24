@@ -11,13 +11,19 @@ The best public collection of arrangements is the gallery by Parpalak and Utkin
 
 | n  | triangles | upper bound | file |
 |----|-----------|-------------|------|
-| 39 | 471       | 481         | [certificates/n39_471.json](certificates/n39_471.json) |
+| 39 | 471 (ties lavaskiller, Oct 2) | 481 | [certificates/n39_471.json](certificates/n39_471.json) |
 | 40 | 495       | 502         | [certificates/n40_495.json](certificates/n40_495.json) |
 | 74 | 1763 (now beaten: 1764 by Parpalak–Utkin) | 1767 | [certificates/n74_1763.json](certificates/n74_1763.json) |
 | 98 | 3119      | 3125        | [certificates/n98_3119.json](certificates/n98_3119.json) |
 
-**39 lines, 471 triangles.** The previous best we know of is 470, and OEIS has no value for
-n = 39 yet. We started from the 470-triangle arrangement, deleted one line, and computed
+**39 lines, 471 triangles.** *Correction, 24 October 2026:* we missed that a different
+471-triangle arrangement was published first, by lavaskiller (team HTPeo) on 2 October
+2026, with a Lean certificate
+([lavaskiller/openmath-2026-htpeo](https://github.com/lavaskiller/openmath-2026-htpeo/tree/main/entries/hills/kobon-n39-lavaskiller)).
+So 471 is not a new value for n = 39. Our arrangement was found independently and is not
+the same one: it has four triple points, while theirs has none.
+
+We started from a 470-triangle arrangement, deleted one line, and computed
 exactly which way of putting one line back gives the most triangles. For this one the best
 re-inserted line passes through no crossing points and gives 471. To draw it straight, the
 other lines had to move slightly, while keeping the existing four triple points exact and
@@ -94,6 +100,19 @@ The counter only needs Python:
     python3 verify.py certificates/n74_1763.json
 
 It uses exact integer arithmetic, so there is no floating point anywhere.
+
+For 39 and 40 lines there is also a list of the triangles themselves:
+[certificates/n39_471_triangles.json](certificates/n39_471_triangles.json) and
+[certificates/n40_495_triangles.json](certificates/n40_495_triangles.json). Each entry
+gives the three lines (0-based indices into the lines file) and the corners as exact
+fractions. A second script checks the list without counting anything itself:
+
+    python3 check_triangles.py certificates/n40_495.json certificates/n40_495_triangles.json
+
+For each listed triangle it checks that the three lines really bound a triangle (no two
+parallel, not all through one point) and that no other line passes through its inside.
+Such a triangle is a face of the arrangement, and different faces never overlap, so
+495 passing triangles show directly that 40 lines can make at least 495.
 
 ## Status
 
