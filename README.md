@@ -11,10 +11,25 @@ The best public collection of arrangements is the gallery by Parpalak and Utkin
 
 | n  | triangles | upper bound | file |
 |----|-----------|-------------|------|
+| 39 | 472       | 481         | [certificates/n39_472.json](certificates/n39_472.json) |
 | 39 | 471 (ties lavaskiller, Oct 2) | 481 | [certificates/n39_471.json](certificates/n39_471.json) |
 | 40 | 495       | 502         | [certificates/n40_495.json](certificates/n40_495.json) |
 | 74 | 1763 (now beaten: 1764 by Parpalak–Utkin) | 1767 | [certificates/n74_1763.json](certificates/n74_1763.json) |
 | 98 | 3119      | 3125        | [certificates/n98_3119.json](certificates/n98_3119.json) |
+
+**39 lines, 472 triangles.** The previous best we know of is 471 (lavaskiller, below), and
+OEIS has no value for n = 39 yet. The arrangement is simple: no parallel lines and no
+triple points.
+
+How it was found: we ran lavaskiller's simulated annealing program (from
+[lavaskiller/openmath-2026-htpeo](https://github.com/lavaskiller/openmath-2026-htpeo/tree/main/entries/hills/kobon-n39-lavaskiller))
+for much longer and from many more starting arrangements than the original run. It moves
+one line at a time by a small random amount and keeps the change when the number of
+triangles does not drop too much. One 15-minute run, started from a 470-triangle
+arrangement in the [rsi-kobon-triangles](https://github.com/Rohith18p/rsi-kobon-triangles)
+repo, reached 472. The lines were then rounded to integers and the triangles counted exactly.
+
+![39 lines, 472 triangles](images/n39_472.png)
 
 **39 lines, 471 triangles.** *Correction, 24 October 2026:* we missed that a different
 471-triangle arrangement was published first, by lavaskiller (team HTPeo) on 2 October
@@ -102,6 +117,7 @@ The counter only needs Python:
 It uses exact integer arithmetic, so there is no floating point anywhere.
 
 For 39 and 40 lines there is also a list of the triangles themselves:
+[certificates/n39_472_triangles.json](certificates/n39_472_triangles.json),
 [certificates/n39_471_triangles.json](certificates/n39_471_triangles.json) and
 [certificates/n40_495_triangles.json](certificates/n40_495_triangles.json). Each entry
 gives the three lines (0-based indices into the lines file) and the corners as exact
