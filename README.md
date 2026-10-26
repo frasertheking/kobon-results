@@ -15,6 +15,7 @@ The best public collection of arrangements is the gallery by Parpalak and Utkin
 | 39 | 472 (superseded) | 481      | [certificates/n39_472.json](certificates/n39_472.json) |
 | 39 | 471 (ties lavaskiller, Oct 2) | 481 | [certificates/n39_471.json](certificates/n39_471.json) |
 | 40 | 495       | 502         | [certificates/n40_495.json](certificates/n40_495.json) |
+| 47 | 692       | 705         | [certificates/n47_692.json](certificates/n47_692.json) |
 | 48 | 722       | 736         | [certificates/n48_722.json](certificates/n48_722.json) |
 | 74 | 1763 (now beaten: 1764 by Parpalak–Utkin) | 1767 | [certificates/n74_1763.json](certificates/n74_1763.json) |
 | 98 | 3119      | 3125        | [certificates/n98_3119.json](certificates/n98_3119.json) |
@@ -74,6 +75,21 @@ points crosses everything in the same order. This is the same kind of move as in
 Parpalak and Utkin's 50-line arrangement with 792 triangles.
 
 ![40 lines, 495 triangles](images/n40_495.png)
+
+**47 lines, 692 triangles.** The previous best we know of is 691 (Zarzuelo's general
+construction), and OEIS has no value for n = 47 yet. The upper bound is Tamura's
+floor(n(n-2)/3) = 705. The arrangement is simple: no parallel lines and no triple points.
+
+How it was found: start from the 49-line arrangement 49-b5 in Parpalak's
+[triangle-maximal-18-series](https://github.com/parpalak/triangle-maximal-18-series)
+gallery and delete two lines, which leaves 676 triangles. The annealing program used for
+39 and 48 lines brought it to 691. Then we deleted two lines at once and worked out exactly
+the best way to put two lines back as pseudolines: 692. The resulting arrangement of
+pseudolines was then drawn with straight lines from scratch, by solving for line
+positions that put every crossing on the correct side of every line. Re-routing one line
+at a time never got past 691.
+
+![47 lines, 692 triangles](images/n47_692.png)
 
 **48 lines, 722 triangles.** The previous best we know of is 721 (the
 [rsi-kobon-triangles](https://github.com/Rohith18p/rsi-kobon-triangles) table, and
@@ -147,11 +163,13 @@ The counter only needs Python:
 
 It uses exact integer arithmetic, so there is no floating point anywhere.
 
-For 39 and 40 lines there is also a list of the triangles themselves:
+For 39, 40, 47 and 48 lines there is also a list of the triangles themselves:
 [certificates/n39_474_triangles.json](certificates/n39_474_triangles.json),
 [certificates/n39_472_triangles.json](certificates/n39_472_triangles.json),
-[certificates/n39_471_triangles.json](certificates/n39_471_triangles.json) and
-[certificates/n40_495_triangles.json](certificates/n40_495_triangles.json). Each entry
+[certificates/n39_471_triangles.json](certificates/n39_471_triangles.json),
+[certificates/n40_495_triangles.json](certificates/n40_495_triangles.json),
+[certificates/n47_692_triangles.json](certificates/n47_692_triangles.json) and
+[certificates/n48_722_triangles.json](certificates/n48_722_triangles.json). Each entry
 gives the three lines (0-based indices into the lines file) and the corners as exact
 fractions. A second script checks the list without counting anything itself:
 
