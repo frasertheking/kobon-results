@@ -15,6 +15,7 @@ The best public collection of arrangements is the gallery by Parpalak and Utkin
 | 39 | 472 (superseded) | 481      | [certificates/n39_472.json](certificates/n39_472.json) |
 | 39 | 471 (ties lavaskiller, Oct 2) | 481 | [certificates/n39_471.json](certificates/n39_471.json) |
 | 40 | 495       | 502         | [certificates/n40_495.json](certificates/n40_495.json) |
+| 48 | 722       | 736         | [certificates/n48_722.json](certificates/n48_722.json) |
 | 74 | 1763 (now beaten: 1764 by Parpalak–Utkin) | 1767 | [certificates/n74_1763.json](certificates/n74_1763.json) |
 | 98 | 3119      | 3125        | [certificates/n98_3119.json](certificates/n98_3119.json) |
 
@@ -73,6 +74,22 @@ points crosses everything in the same order. This is the same kind of move as in
 Parpalak and Utkin's 50-line arrangement with 792 triangles.
 
 ![40 lines, 495 triangles](images/n40_495.png)
+
+**48 lines, 722 triangles.** The previous best we know of is 721 (the
+[rsi-kobon-triangles](https://github.com/Rohith18p/rsi-kobon-triangles) table, and
+Zarzuelo's general construction), and OEIS has no value for n = 48 yet. The upper bound
+in the table is Tamura's floor(n(n-2)/3) = 736. The arrangement has three triple points
+and no parallel lines.
+
+How it was found: start from the 49-line arrangement 49-b5 in Parpalak's
+[triangle-maximal-18-series](https://github.com/parpalak/triangle-maximal-18-series)
+gallery and delete one line, which leaves 720 triangles. A 30-minute run of the annealing
+program that can pin lines through crossing points (the one used for 39 lines) brought
+it to 721 with one triple point. Then, as for 40 lines, we deleted one line and worked
+out exactly which way of putting a line back gives the most triangles: 722. The rest of
+the arrangement was nudged slightly so that this line could be drawn straight.
+
+![48 lines, 722 triangles](images/n48_722.png)
 
 **74 lines, 1763 triangles.** We start from a perfect 73-line arrangement (1727
 triangles) and add one line far out, beyond every crossing point, at an angle where it
