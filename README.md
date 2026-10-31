@@ -16,7 +16,8 @@ The best public collection of arrangements is the gallery by Parpalak and Utkin
 | 39 | 472 (superseded) | 481      | [certificates/n39_472.json](certificates/n39_472.json) |
 | 39 | 471 (ties lavaskiller, Oct 2) | 481 | [certificates/n39_471.json](certificates/n39_471.json) |
 | 40 | 495       | 502         | [certificates/n40_495.json](certificates/n40_495.json) |
-| 47 | 693       | 705         | [certificates/n47_693.json](certificates/n47_693.json) |
+| 47 | 694       | 705         | [certificates/n47_694.json](certificates/n47_694.json) |
+| 47 | 693 (superseded) | 705      | [certificates/n47_693.json](certificates/n47_693.json) |
 | 47 | 692 (superseded) | 705      | [certificates/n47_692.json](certificates/n47_692.json) |
 | 48 | 722       | 736         | [certificates/n48_722.json](certificates/n48_722.json) |
 | 74 | 1763 (now beaten: 1764 by Parpalak–Utkin) | 1767 | [certificates/n74_1763.json](certificates/n74_1763.json) |
@@ -91,9 +92,19 @@ Parpalak and Utkin's 50-line arrangement with 792 triangles.
 
 ![40 lines, 495 triangles](images/n40_495.png)
 
-**47 lines, 693 triangles.** The previous best we know of is 691 (Zarzuelo's general
-construction), and OEIS has no value for n = 47 yet. The upper bound is Tamura's
-floor(n(n-2)/3) = 705. The arrangement is simple: no parallel lines and no triple points.
+**47 lines, 694 triangles.** The previous best we know of is our 693 (below), and OEIS has
+no value for n = 47 yet. The upper bound is Tamura's floor(n(n-2)/3) = 705. The arrangement
+is simple: no parallel lines and no triple points.
+
+How it was found: one more round of the same two-line move, starting from a 693-triangle
+arrangement found the same way. We deleted two lines at once, worked out exactly the best way to put two pseudolines back
+(694), straightened the whole arrangement from scratch and counted the triangles exactly.
+
+![47 lines, 694 triangles](images/n47_694.png)
+
+**47 lines, 693 triangles** (superseded by the 694 above). The previous best we knew of was
+691 (Zarzuelo's general construction). The arrangement is simple: no parallel lines and no
+triple points.
 
 How it was found: the same two-line move as for the 692 below, applied twice. We started
 from a 691-triangle arrangement of the standard kind (46 lines plus one added line),
@@ -190,6 +201,7 @@ It uses exact integer arithmetic, so there is no floating point anywhere.
 
 For 39, 40, 47 and 48 lines there is also a list of the triangles themselves:
 [certificates/n39_475_triangles.json](certificates/n39_475_triangles.json),
+[certificates/n47_694_triangles.json](certificates/n47_694_triangles.json),
 [certificates/n47_693_triangles.json](certificates/n47_693_triangles.json),
 [certificates/n39_474_triangles.json](certificates/n39_474_triangles.json),
 [certificates/n39_472_triangles.json](certificates/n39_472_triangles.json),
