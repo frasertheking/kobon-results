@@ -9,19 +9,19 @@ The best public collection of arrangements is the gallery by Parpalak and Utkin
 
 ## Results
 
-| n  | triangles | upper bound | file |
-|----|-----------|-------------|------|
-| 39 | 475       | 481         | [certificates/n39_475.json](certificates/n39_475.json) |
-| 39 | 474 (superseded) | 481      | [certificates/n39_474.json](certificates/n39_474.json) |
-| 39 | 472 (superseded) | 481      | [certificates/n39_472.json](certificates/n39_472.json) |
-| 39 | 471 (ties lavaskiller, Oct 2) | 481 | [certificates/n39_471.json](certificates/n39_471.json) |
-| 40 | 495       | 502         | [certificates/n40_495.json](certificates/n40_495.json) |
-| 47 | 694       | 705         | [certificates/n47_694.json](certificates/n47_694.json) |
-| 47 | 693 (superseded) | 705      | [certificates/n47_693.json](certificates/n47_693.json) |
-| 47 | 692 (superseded) | 705      | [certificates/n47_692.json](certificates/n47_692.json) |
-| 48 | 722       | 736         | [certificates/n48_722.json](certificates/n48_722.json) |
-| 74 | 1763 (now beaten: 1764 by Parpalak–Utkin) | 1767 | [certificates/n74_1763.json](certificates/n74_1763.json) |
-| 98 | 3119      | 3125        | [certificates/n98_3119.json](certificates/n98_3119.json) |
+| n  | triangles | upper bound | found (2026) | file |
+|----|-----------|-------------|--------------|------|
+| 39 | 475       | 481         | Oct 26 | [certificates/n39_475.json](certificates/n39_475.json) |
+| 39 | 474 (superseded) | 481      | Oct 24 | [certificates/n39_474.json](certificates/n39_474.json) |
+| 39 | 472 (superseded) | 481      | Oct 24 | [certificates/n39_472.json](certificates/n39_472.json) |
+| 39 | 471 (ties lavaskiller's Oct 2 result) | 481 | Oct 23 | [certificates/n39_471.json](certificates/n39_471.json) |
+| 40 | 495       | 502         | Oct 21 | [certificates/n40_495.json](certificates/n40_495.json) |
+| 47 | 694       | 705         | Oct 30 | [certificates/n47_694.json](certificates/n47_694.json) |
+| 47 | 693 (superseded) | 705      | Oct 26 | [certificates/n47_693.json](certificates/n47_693.json) |
+| 47 | 692 (superseded) | 705      | Oct 26 | [certificates/n47_692.json](certificates/n47_692.json) |
+| 48 | 722       | 736         | Oct 26 | [certificates/n48_722.json](certificates/n48_722.json) |
+| 74 | 1763 (now beaten: 1764 by Parpalak–Utkin) | 1767 | Oct 17 | [certificates/n74_1763.json](certificates/n74_1763.json) |
+| 98 | 3119      | 3125        | Oct 19 | [certificates/n98_3119.json](certificates/n98_3119.json) |
 
 **39 lines, 475 triangles.** The previous best we know of is our 474 (below), and OEIS has
 no value for n = 39 yet. The upper bound is floor(n(n-2)/3) = 481. The arrangement is
