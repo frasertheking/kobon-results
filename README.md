@@ -11,19 +11,51 @@ The best public collection of arrangements is the gallery by Parpalak and Utkin
 
 | n  | triangles | upper bound | found (2026) | file |
 |----|-----------|-------------|--------------|------|
-| 39 | 475       | 481         | Oct 26 | [certificates/n39_475.json](certificates/n39_475.json) |
+| 39 | **477**   | 481         | Nov 2  | [certificates/n39_477.json](certificates/n39_477.json) |
+| 39 | 475 (superseded) | 481      | Oct 26 | [certificates/n39_475.json](certificates/n39_475.json) |
 | 39 | 474 (superseded) | 481      | Oct 24 | [certificates/n39_474.json](certificates/n39_474.json) |
 | 39 | 472 (superseded) | 481      | Oct 24 | [certificates/n39_472.json](certificates/n39_472.json) |
 | 39 | 471 (ties lavaskiller's Oct 2 result) | 481 | Oct 23 | [certificates/n39_471.json](certificates/n39_471.json) |
-| 40 | 495       | 502         | Oct 21 | [certificates/n40_495.json](certificates/n40_495.json) |
-| 47 | 694       | 705         | Oct 30 | [certificates/n47_694.json](certificates/n47_694.json) |
+| 40 | **496**   | 502         | Nov 2  | [certificates/n40_496.json](certificates/n40_496.json) |
+| 40 | 495 (superseded) | 502      | Oct 21 | [certificates/n40_495.json](certificates/n40_495.json) |
+| 47 | **701**   | 705         | Nov 2  | [certificates/n47_701.json](certificates/n47_701.json) |
+| 47 | 694 (superseded) | 705      | Oct 30 | [certificates/n47_694.json](certificates/n47_694.json) |
 | 47 | 693 (superseded) | 705      | Oct 26 | [certificates/n47_693.json](certificates/n47_693.json) |
 | 47 | 692 (superseded) | 705      | Oct 26 | [certificates/n47_692.json](certificates/n47_692.json) |
-| 48 | 722       | 736         | Oct 26 | [certificates/n48_722.json](certificates/n48_722.json) |
+| 48 | **723**   | 736         | Nov 2  | [certificates/n48_723.json](certificates/n48_723.json) |
+| 48 | 722 (superseded) | 736      | Oct 26 | [certificates/n48_722.json](certificates/n48_722.json) |
 | 74 | 1763 (now beaten: 1764 by Parpalak–Utkin) | 1767 | Oct 17 | [certificates/n74_1763.json](certificates/n74_1763.json) |
 | 98 | 3119      | 3125        | Oct 19 | [certificates/n98_3119.json](certificates/n98_3119.json) |
 
-**39 lines, 475 triangles.** The previous best we know of is our 474 (below), and OEIS has
+**Far-line doubling: 39 lines / 477, 40 / 496, 47 / 701, 48 / 723 triangles.** All four
+arrangements are simple (no parallel lines, no triple points) and come from one construction,
+described in [notes/far_doubling.md](notes/far_doubling.md). Start from a perfect arrangement C
+of m = 19 or 23 lines from the Parpalak–Utkin gallery
+([ud1/kobon-solutions](https://github.com/ud1/kobon-solutions): P19-12daaceiiq6nr,
+P19-12hco47xx8083, P23-23kpm7pjzyn1v). Add one line Y0 far outside C. Its triangles with C are
+wedges of C, which can never be adjacent, so Y0 gets (m-1)/2 of them on alternating segments.
+Then add a bundle of m (or m+1) lines running close to Y0, tangent to a conic and placed by a
+linear program so that every pair crosses between the right two lines of C. Inside the thin
+strip around Y0 the bundle adds m^2 (or m(m+1)) triangles and keeps every triangle of C and Y0:
+
+- 39 = 19 + 1 + 19 lines: 107 + 9 + 19^2 = 477
+- 40 = 19 + 1 + 20 lines: 107 + 9 + 19*20 = 496
+- 47 = 23 + 1 + 23 lines: 161 + 11 + 23^2 = 701
+- 48 = 23 + 1 + 24 lines: 723 (the formula gives 724)
+
+The classical doubling (Bartholdi et al.; Forge and Ramirez Alfonsin) needs an even number of
+lines in the bundle, which is why it only reaches sizes 1 mod 4; using a far line with
+alternating wedges removes that restriction. Coordinates are exact integers of about 190 bits.
+
+![39 lines, 477 triangles](images/n39_477.png)
+
+![47 lines, 701 triangles](images/n47_701.png)
+
+![40 lines, 496 triangles](images/n40_496.png)
+
+![48 lines, 723 triangles](images/n48_723.png)
+
+**39 lines, 475 triangles** (superseded by the 477 above). The previous best we know of is our 474 (below), and OEIS has
 no value for n = 39 yet. The upper bound is floor(n(n-2)/3) = 481. The arrangement is
 simple: no parallel lines and no triple points.
 
@@ -78,7 +110,7 @@ keeping the new line's direction in the right range.
 
 ![39 lines, 471 triangles](images/n39_471.png)
 
-**40 lines, 495 triangles.** The previous best we know of is 494, and OEIS has no
+**40 lines, 495 triangles** (superseded by the 496 above). The previous best we know of is 494, and OEIS has no
 value for n = 40 yet. The arrangement has two triple points, both on the same line,
 and no parallel lines.
 
@@ -92,7 +124,7 @@ Parpalak and Utkin's 50-line arrangement with 792 triangles.
 
 ![40 lines, 495 triangles](images/n40_495.png)
 
-**47 lines, 694 triangles.** The previous best we know of is our 693 (below), and OEIS has
+**47 lines, 694 triangles** (superseded by the 701 above). The previous best we know of is our 693 (below), and OEIS has
 no value for n = 47 yet. The upper bound is Tamura's floor(n(n-2)/3) = 705. The arrangement
 is simple: no parallel lines and no triple points.
 
@@ -127,7 +159,7 @@ at a time never got past 691.
 
 ![47 lines, 692 triangles](images/n47_692.png)
 
-**48 lines, 722 triangles.** The previous best we know of is 721 (the
+**48 lines, 722 triangles** (superseded by the 723 above). The previous best we know of is 721 (the
 [rsi-kobon-triangles](https://github.com/Rohith18p/rsi-kobon-triangles) table, and
 Zarzuelo's general construction), and OEIS has no value for n = 48 yet. The upper bound
 in the table is Tamura's floor(n(n-2)/3) = 736. The arrangement has three triple points
