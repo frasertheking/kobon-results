@@ -22,7 +22,8 @@ The best public collection of arrangements is the gallery by Parpalak and Utkin
 | 47 | 694 (superseded) | 705      | Oct 30 | [certificates/n47_694.json](certificates/n47_694.json) |
 | 47 | 693 (superseded) | 705      | Oct 26 | [certificates/n47_693.json](certificates/n47_693.json) |
 | 47 | 692 (superseded) | 705      | Oct 26 | [certificates/n47_692.json](certificates/n47_692.json) |
-| 48 | **724**   | 736         | Nov 2  | [certificates/n48_724.json](certificates/n48_724.json) |
+| 48 | **725**   | 736         | Nov 3  | [certificates/n48_725.json](certificates/n48_725.json) |
+| 48 | 724 (superseded) | 736      | Nov 2  | [certificates/n48_724.json](certificates/n48_724.json) |
 | 48 | 723 (superseded) | 736      | Nov 2  | [certificates/n48_723.json](certificates/n48_723.json) |
 | 48 | 722 (superseded) | 736      | Oct 26 | [certificates/n48_722.json](certificates/n48_722.json) |
 | 74 | 1763 (now beaten: 1764 by Parpalak–Utkin) | 1767 | Oct 17 | [certificates/n74_1763.json](certificates/n74_1763.json) |
@@ -44,6 +45,13 @@ strip around Y0 the bundle adds m^2 (or m(m+1)) triangles and keeps every triang
 - 47 = 23 + 1 + 23 lines: 161 + 11 + 23^2 = 701
 - 48 = 23 + 1 + 24 lines: 161 + 11 + 23*24 = 724 (an earlier fit gave 723)
 
+**48 lines, 725 triangles (Nov 3).** The 24-wire bundle needs 24 rounds of crossings but the base
+only leaves 23 slots, so in the 724 two rounds share a slot and waste segments. Rebuilding the end
+of the bundle with triple points removes that: the second-to-last base line passes through 11
+crossings of one round and the top three wires meet in one point. That gains exactly one
+triangle: 161 + 11 + 23*24 + 1 = 725. This arrangement has no parallel lines and 12 triple
+points (so it is not simple); coordinates are exact integers of about 1060 bits.
+
 The classical doubling (Bartholdi et al.; Forge and Ramirez Alfonsin) needs an even number of
 lines in the bundle, which is why it only reaches sizes 1 mod 4; using a far line with
 alternating wedges removes that restriction. Coordinates are exact integers of about 190 bits.
@@ -54,7 +62,7 @@ alternating wedges removes that restriction. Coordinates are exact integers of a
 
 ![40 lines, 496 triangles](images/n40_496.png)
 
-![48 lines, 724 triangles](images/n48_724.png)
+![48 lines, 725 triangles](images/n48_725.png)
 
 **39 lines, 475 triangles** (superseded by the 477 above). The previous best we know of is our 474 (below), and OEIS has
 no value for n = 39 yet. The upper bound is floor(n(n-2)/3) = 481. The arrangement is
