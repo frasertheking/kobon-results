@@ -1,7 +1,7 @@
 # Far-line doubling for odd bundles
 
-This note describes the construction behind the 39/477, 40/496, 47/701 and 48/723
-arrangements in `certificates/`.
+This note describes the construction behind the 39/477, 40/496, 47/701 and 48/724
+arrangements (and the earlier 48/723) in `certificates/`.
 
 ## Classical doubling and why it stops at sizes 1 mod 4
 
@@ -61,7 +61,7 @@ infeasible. The bases that worked are gallery perfect arrangements by Parpalak a
 | 39 / 477 | P19-12daaceiiq6nr (107) | 107 + 9 + 361 |
 | 40 / 496 | P19-12hco47xx8083 (107) | 107 + 9 + 380 |
 | 47 / 701 | P23-23kpm7pjzyn1v (161) | 161 + 11 + 529 |
-| 48 / 723 | P23-23kpm7pjzyn1v (161) | one short of 161 + 11 + 552 = 724 |
+| 48 / 724 | P23-23kpm7pjzyn1v (161) | 161 + 11 + 552 |
 
 Each certificate was counted by `verify.py`, by the triangle list check in `check_triangles.py`,
 and by two further independent counters. All four arrangements are simple.

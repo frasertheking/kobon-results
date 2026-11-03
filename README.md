@@ -22,12 +22,13 @@ The best public collection of arrangements is the gallery by Parpalak and Utkin
 | 47 | 694 (superseded) | 705      | Oct 30 | [certificates/n47_694.json](certificates/n47_694.json) |
 | 47 | 693 (superseded) | 705      | Oct 26 | [certificates/n47_693.json](certificates/n47_693.json) |
 | 47 | 692 (superseded) | 705      | Oct 26 | [certificates/n47_692.json](certificates/n47_692.json) |
-| 48 | **723**   | 736         | Nov 2  | [certificates/n48_723.json](certificates/n48_723.json) |
+| 48 | **724**   | 736         | Nov 2  | [certificates/n48_724.json](certificates/n48_724.json) |
+| 48 | 723 (superseded) | 736      | Nov 2  | [certificates/n48_723.json](certificates/n48_723.json) |
 | 48 | 722 (superseded) | 736      | Oct 26 | [certificates/n48_722.json](certificates/n48_722.json) |
 | 74 | 1763 (now beaten: 1764 by Parpalak–Utkin) | 1767 | Oct 17 | [certificates/n74_1763.json](certificates/n74_1763.json) |
 | 98 | 3119      | 3125        | Oct 19 | [certificates/n98_3119.json](certificates/n98_3119.json) |
 
-**Far-line doubling: 39 lines / 477, 40 / 496, 47 / 701, 48 / 723 triangles.** All four
+**Far-line doubling: 39 lines / 477, 40 / 496, 47 / 701, 48 / 724 triangles.** All four
 arrangements are simple (no parallel lines, no triple points) and come from one construction,
 described in [notes/far_doubling.md](notes/far_doubling.md). Start from a perfect arrangement C
 of m = 19 or 23 lines from the Parpalak–Utkin gallery
@@ -41,7 +42,7 @@ strip around Y0 the bundle adds m^2 (or m(m+1)) triangles and keeps every triang
 - 39 = 19 + 1 + 19 lines: 107 + 9 + 19^2 = 477
 - 40 = 19 + 1 + 20 lines: 107 + 9 + 19*20 = 496
 - 47 = 23 + 1 + 23 lines: 161 + 11 + 23^2 = 701
-- 48 = 23 + 1 + 24 lines: 723 (the formula gives 724)
+- 48 = 23 + 1 + 24 lines: 161 + 11 + 23*24 = 724 (an earlier fit gave 723)
 
 The classical doubling (Bartholdi et al.; Forge and Ramirez Alfonsin) needs an even number of
 lines in the bundle, which is why it only reaches sizes 1 mod 4; using a far line with
@@ -53,7 +54,7 @@ alternating wedges removes that restriction. Coordinates are exact integers of a
 
 ![40 lines, 496 triangles](images/n40_496.png)
 
-![48 lines, 723 triangles](images/n48_723.png)
+![48 lines, 724 triangles](images/n48_724.png)
 
 **39 lines, 475 triangles** (superseded by the 477 above). The previous best we know of is our 474 (below), and OEIS has
 no value for n = 39 yet. The upper bound is floor(n(n-2)/3) = 481. The arrangement is
