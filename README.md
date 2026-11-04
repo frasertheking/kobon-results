@@ -16,7 +16,8 @@ The best public collection of arrangements is the gallery by Parpalak and Utkin
 | 39 | 474 (superseded) | 481      | Oct 24 | [certificates/n39_474.json](certificates/n39_474.json) |
 | 39 | 472 (superseded) | 481      | Oct 24 | [certificates/n39_472.json](certificates/n39_472.json) |
 | 39 | 471 (ties lavaskiller's Oct 2 result) | 481 | Oct 23 | [certificates/n39_471.json](certificates/n39_471.json) |
-| 40 | **496**   | 502         | Nov 2  | [certificates/n40_496.json](certificates/n40_496.json) |
+| 40 | **497**   | 502         | Nov 3  | [certificates/n40_497.json](certificates/n40_497.json) |
+| 40 | 496 (superseded) | 502         | Nov 2  | [certificates/n40_496.json](certificates/n40_496.json) |
 | 40 | 495 (superseded) | 502      | Oct 21 | [certificates/n40_495.json](certificates/n40_495.json) |
 | 47 | **701**   | 705         | Nov 2  | [certificates/n47_701.json](certificates/n47_701.json) |
 | 47 | 694 (superseded) | 705      | Oct 30 | [certificates/n47_694.json](certificates/n47_694.json) |
@@ -45,11 +46,12 @@ strip around Y0 the bundle adds m^2 (or m(m+1)) triangles and keeps every triang
 - 47 = 23 + 1 + 23 lines: 161 + 11 + 23^2 = 701
 - 48 = 23 + 1 + 24 lines: 161 + 11 + 23*24 = 724 (an earlier fit gave 723)
 
-**48 lines, 725 triangles (Nov 3).** The 24-wire bundle needs 24 rounds of crossings but the base
+**40 lines, 497 triangles and 48 lines, 725 triangles (Nov 3).** The 24-wire bundle needs 24 rounds of crossings but the base
 only leaves 23 slots, so in the 724 two rounds share a slot and waste segments. Rebuilding the end
 of the bundle with triple points removes that: the second-to-last base line passes through 11
 crossings of one round and the top three wires meet in one point. That gains exactly one
-triangle: 161 + 11 + 23*24 + 1 = 725. This arrangement has no parallel lines and 12 triple
+triangle: 161 + 11 + 23*24 + 1 = 725. The same tail on a different perfect 19-line base
+(gallery P19-1tq863pkdurtf) gives 40 lines: 107 + 9 + 19*20 + 1 = 497 (10 triple points). The 48-line arrangement has no parallel lines and 12 triple
 points (so it is not simple); coordinates are exact integers of about 1060 bits.
 
 The classical doubling (Bartholdi et al.; Forge and Ramirez Alfonsin) needs an even number of
@@ -61,6 +63,8 @@ alternating wedges removes that restriction. Coordinates are exact integers of a
 ![47 lines, 701 triangles](images/n47_701.png)
 
 ![40 lines, 496 triangles](images/n40_496.png)
+
+![40 lines, 497 triangles](images/n40_497.png)
 
 ![48 lines, 725 triangles](images/n48_725.png)
 
